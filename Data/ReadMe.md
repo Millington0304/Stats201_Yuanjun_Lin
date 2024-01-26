@@ -1,4 +1,6 @@
 **CONUS Climate Grid Data (1895-Present)**
+This dataset is chosen for its reliability and completeness due to the nature of being sourced from NOAA by the US government. The data is obtained by NOAA through industry-standard meteorological measurement instruments.
+
 1. **Overview:**
    - **Title:** Continental United States (CONUS) Climate Grid Data (on temperature and precipitation)
    - **Temporal Coverage:** 1895-Present
@@ -11,7 +13,7 @@
    - **Data Source:** Global Historical Climatology Network (GHCN, NOAA)
    - **Gridding Approach:** 5km gridded data based on GHCN dataset
 
-3. **Variables:**
+3. **Dictionary of Variables:**
    - **Column 1:** Latitude (in decimals)
    - **Column 2:** Longitude (in decimals)
    - **Column 3:** Precipitation (mm to 100ths)
@@ -36,3 +38,5 @@
 
 8. **Update Frequency:**
    - **Data Updates:** The dataset is updated monthly with the inclusion of the latest month's data.
+9. **Reference:**
+   - National Oceanic and Atmospheric Administration (NOAA). (n.d.). Gridded Climate Datasets. National Centers for Environmental Information. Retrieved at Jan 24th 2024, from https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc%3AC00332
