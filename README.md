@@ -2,10 +2,14 @@
 ### Data
 - Preview of the dataset
 - Description of the dataset
+- Flowchart
 ### Code
 - Code in Python and MS batchfile for acquisition and initial analysis
-- Description for rationale
-
+- Description of rationale
+- Flowchart
+### Literature
+- One article and review
+- Flowchart
 
 ## About me
 <img src='https://github.com/Millington0304/Stats201_Yuanjun_Lin/assets/31695074/d5e6ff0e-8058-49a1-b267-0b947077f77c' width='200'>\
