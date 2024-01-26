@@ -1,5 +1,6 @@
 **CONUS Climate Grid Data (1895-Present)**
 This dataset is chosen for its reliability and completeness due to the nature of being sourced from NOAA by the US government. The data is obtained by NOAA through industry-standard meteorological measurement instruments.
+Flowchart for intuitive access available at: https://whimsical.com/dataset-flow-12AtVsN89yL3mAMszdqwnK
 
 1. **Overview:**
    - **Title:** Continental United States (CONUS) Climate Grid Data (on temperature and precipitation)
