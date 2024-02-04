@@ -14,3 +14,22 @@
 **References**
 - Torricelli, M., et al. (2023). How does extreme weather impact the climate change discourse? Insights from the Twitter discussion on hurricanes. PLOS Climate.
 - Trenberth, K. E., Jones, P. D., Ambenje, P., Bojariu, R., Easterling, D., Tank, A. K., Parker, D., Rahimzadeh, F., Renwick, J. A., Rusticucci, M., Soden, B., & Zhai, P. (2007). Observations: Surface and Atmospheric Climate Change. In S. Solomon, D. Qin, M. Manning, Z. Chen, M. Marquis, K. B. Averyt, M. Tignor, & H. L. Miller (Eds.), Climate Change 2007: The Physical Science Basis. Contribution of Working Group I to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change (pp. 235-336). Cambridge University Press.
+
+
+# Precipitation Anomaly Prediction Model
+
+This repository contains the code for a machine learning model designed to predict precipitation anomalies based on historical and current weather data. The model utilizes Convolutional Neural Networks (CNN) to process spatial data of monthly precipitation anomalies and integrates temporal data from Google Trends related to climate change discussions.
+
+## Data
+The dataset comprises two main components:
+- **Spatial Data**: Monthly precipitation anomaly data (deviation from the norm) represented in a tensor format `(month, latitude, longitude)`.
+- **Temporal Data**: Google Trends data indicating the intensity of discussions around climate change for each month.
+
+## Model
+The model architecture combines CNN layers to extract spatial features from the precipitation data and Dense layers to incorporate the temporal Google Trends data. The final output predicts the precipitation anomaly for future months.
+
+## Training
+The model was trained on a subset of the data, with careful preprocessing including normalization and resizing to handle the large spatial dimensions of the data.
+
+## Usage
+To use this model, ensure you have the required spatial and temporal data formatted according to the specifications. Adjust the model parameters as necessary to fit your specific dataset and prediction needs.
