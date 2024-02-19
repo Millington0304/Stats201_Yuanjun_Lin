@@ -1,7 +1,7 @@
 **Data acquisition**
 - Use the command line batch file to obtain the required dataset from NOAA
 - No need for flowcharts as it's intuitively downloaded from the official website.
-- Rationale: According to IPCC's Fourth Assessment Report (Trenberth et al.) provides an extensive overview of observed climate change, including detailed discussions on temperature and precipitation measurements. It explains how anomalies in these parameters are indicative of broader climate trends and variability, offering a robust framework for understanding and interpreting climate data. And Torricelli et al. (2023) provided a foundation for further analysing such correlation in more details and in a machine-learning-based manner.
+- Rationale: According to IPCC's Fourth Assessment Report (Trenberth et al., 2023) provides an extensive overview of observed climate change, including detailed discussions on temperature and precipitation measurements. It explains how anomalies in these parameters are indicative of broader climate trends and variability, offering a robust framework for understanding and interpreting climate data. And Torricelli et al. (2023) provided a foundation for further analysing such correlation in more details and in a machine-learning-based manner.
 
 **Data visualization**
 - Due to the size of the dataset and transfer speed from the original source, having the data locally is highly recommended\
