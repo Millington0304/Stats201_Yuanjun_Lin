@@ -14,7 +14,7 @@ The repository now contains an initial analysis of the dataset obtained from NOA
 - Flowchart
 
 ## About me
-<img src='https://github.com/Millington0304/Stats201_Yuanjun_Lin/assets/31695074/d5e6ff0e-8058-49a1-b267-0b947077f77c' width='200'>\
+<img src='https://github.com/Millington0304/Stats201_Yuanjun_Lin/assets/31695074/d5e6ff0e-8058-49a1-b267-0b947077f77c' width='200'>
 **Education**: *Duke Kunshan University, Class of 2024*  
 **Major**: Data Science
 
