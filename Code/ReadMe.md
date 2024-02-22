@@ -18,7 +18,7 @@
 - Trenberth, K. E., Jones, P. D., Ambenje, P., Bojariu, R., Easterling, D., Tank, A. K., Parker, D., Rahimzadeh, F., Renwick, J. A., Rusticucci, M., Soden, B., & Zhai, P. (2007). Observations: Surface and Atmospheric Climate Change. In S. Solomon, D. Qin, M. Manning, Z. Chen, M. Marquis, K. B. Averyt, M. Tignor, & H. L. Miller (Eds.), Climate Change 2007: The Physical Science Basis. Contribution of Working Group I to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change (pp. 235-336). Cambridge University Press.
 
 
-# Precipitation Anomaly Prediction Model
+# Precipitation Anomaly Prediction Model (in CNN.ipynb)
 
 This repository contains the code for a machine learning model designed to predict precipitation anomalies based on historical and current weather data. The model utilizes Convolutional Neural Networks (CNN) to process spatial data of monthly precipitation anomalies and integrates temporal data from Google Trends related to climate change discussions.
 
@@ -35,3 +35,21 @@ The model was trained on a subset of the data, with careful preprocessing includ
 
 ## Usage
 To use this model, ensure you have the required spatial and temporal data formatted according to the specifications. Adjust the model parameters as necessary to fit your specific dataset and prediction needs.
+
+
+# Causal Inference in Climate Change Discourse with OLS
+
+This repository contains the implementation of a causal inference design using linear regression to investigate the impact of public discourse on climate change on observed precipitation anomalies. Our study leverages time-series data from Google Trends and historical weather records to explore this relationship within the context of climate science and public policy.
+
+## Analysis
+Two distinct linear regression analyses are conducted using discourse intensity as DV and anomaly index as IV for each month:
+1. **Without Significant Anomalies**: Assessing periods characterized by normal weather patterns.
+2. **With Significant Anomalies**: Focusing on periods marked by significant deviations in weather patterns, potentially linked to climate change discussions.
+The distinction was made by using the median anomaly index in the dataset as a threshold.
+
+## Requirements
+- Python 3.x
+- Pandas
+- NumPy
+- Statsmodels
+- Matplotlib / Seaborn for visualization
