@@ -1,3 +1,5 @@
+![something]<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/7N2TvRYKFb8ExEySWYqk6m"></iframe>
+
 # Data acquisition and visualization
 
 **Data acquisition**
