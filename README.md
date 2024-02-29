@@ -1,17 +1,25 @@
-## Contents
-The repository now contains an initial analysis of the dataset obtained from NOAA on climate anomaly with temperature and precipitation data. The data acquisition method and a preview of the dataset is also included. Some details of the rationales and literature review are also included.
+### Poster and Project Summary
+**Background/Motivation**: In an era where climate change's impacts are increasingly tangible, understanding the interplay between public discourse and environmental phenomena is crucial. This study delves into how precipitation anomalies influence public discussions on climate change, leveraging advanced machine learning techniques to uncover patterns and causations that can inform effective communication strategies and policy development.
 
-### Data
-- Preview of the dataset
-- Description of the dataset
-- Flowchart
-### Code
-- Code in Python and MS batchfile for acquisition and initial analysis
-- Description of rationale
-- Flowchart
-### Literature
-- One article and review
-- Flowchart
+**Research Questions**:
+1. How do precipitation anomalies affect the level of public discourse on climate change?
+2. Can we leverage machine learning to predict periods of heightened public discourse on climate change based on weather patterns?
+
+**Application Scenario (Data Source)**: Utilizing a comprehensive dataset from NOAA, this research analyzes US-based precipitation anomalies and correlates them with public interest metrics sourced from Google Trends. The study spans a decade, offering a rich temporal context to understand the evolving climate discourse.
+
+**Methodology**: The study employs a dual-methodological approach:
+- A Convolutional Neural Network (CNN) to analyze spatial data for predicting precipitation anomalies.
+- Causal inference with Ordinary Least Squares (OLS) Linear Regression to explore the relationship between weather patterns and public discourse, distinguishing between anomalous and non-anomalous periods.
+
+**Results**:
+- The CNN model demonstrates a strong capability to predict precipitation anomalies, highlighting a general correlation with public discourse on climate change.
+- The OLS regression analysis reveals a nuanced relationship; while extreme weather events do spur more public discourse, the effect varies and is not uniformly significant across all anomalous periods.
+
+**Intellectual Merits**: This research advances the understanding of how environmental changes, particularly extreme weather events, shape public discourse on climate change. By integrating machine learning with traditional statistical analysis, the study offers a novel perspective on predicting and understanding public engagement with climate issues.
+
+**Practical Impacts**: The findings have significant implications for policymakers, climate communicators, and activists. By identifying key periods when the public is most receptive to climate change discussions, stakeholders can tailor communication and policy initiatives to maximize impact and engagement, ultimately fostering a more informed and proactive societal response to climate challenges.
+
+![Poster](https://github.com/Rising-Stars-by-Sunshine/Stats201_Yuanjun_Lin/assets/31695074/71df9d7a-d971-4679-af53-33358b01719a)
 
 ### Literature
 Recent studies have delved into the intricate relationship between extreme weather events and the ensuing discourse on climate change, employing various methodological approaches to unravel the complexities of public engagement and perception. Notably, the work by Torricelli et al. (2023) provides valuable insights into how hurricanes, a specific kind of extreme weather, shape the climate change discourse on platforms like Twitter. Their analysis, grounded in social media data, underscores the pivotal role such platforms play in amplifying conversations around climate-related phenomena, ultimately influencing the broader narrative on climate change (Torricelli M, et al., 2023).
@@ -167,8 +175,10 @@ Our research embarked on a journey to unravel the dynamics between precipitation
      ↓ (Action: Communication Strategy)
 [Public Engagement (Reward)]
 ```
-
 These future research directions aim to harness the power of causal inference and optimization methods to advance our understanding of climate change communication's dynamics, ultimately contributing to more effective public engagement and policy development in response to climate anomalies.
+
+### Acknowledgement
+I hereby extend my heartfelt gratitude to Professor Luyao Zhang for her invaluable guidance, insightful critiques, and unwavering support throughout the course of this research. Especially in terms of organizing all the activities, workshops, and symposiums besides the regular lectures which have significantly facilitated the progress of this study. During these events and activities, my fellow classmates have been professional and helpful, providing constructive suggestions and a harmonic, hospitable, and decent academic environment. Here just to name a few, including Aida Camacho Ponce de Leon for her devotion to organize group discussion and reciprocally beneficial study environment; Pengyu Chen for his insightful suggestions on the draft; Jiahe Qian for his engagement in the group and as a collective learning group leader.
 
 ### References
 Torricelli M, Falkenberg M, Galeazzi A, Zollo F, Quattrociocchi W, et al. (2023) How does extreme weather impact the climate change discourse? Insights from the Twitter discussion on hurricanes. PLOS Climate 2(11): e0000277. https://doi.org/10.1371/journal.pclm.0000277. Retrieved at https://journals.plos.org/climate/article/citation?id=10.1371/journal.pclm.0000277.
