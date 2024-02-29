@@ -45,7 +45,6 @@ This distinction in data source and methodology underscores the novelty of the p
 - **Justification**: The rationale behind this hypothesis stems from the observable trend where extreme weather events often catalyze public and media attention towards climate change, as evidenced by increased news coverage, social media activity, and online searches related to climate change in the aftermath of such events. This pattern suggests a reactive public response to visible and impactful manifestations of climate change, such as extreme weather.
 
 - **Machine Learning Algorithm Selection**: To test this hypothesis, a **Convolutional Neural Network (CNN)** is selected for its prowess in handling and analyzing spatial data. Given the geospatial nature of precipitation data and its complex relationship with public discourse, CNNs are well-suited for capturing the intricate patterns within the data that might influence public interest in climate change. The choice of a CNN is justified by its proven capability to extract meaningful features from complex datasets, making it an ideal tool for this analysis.
-
 In addition to the Convolutional Neural Network (CNN), our study employs **Ordinary Least Squares (OLS) linear regression** within a **causal inference framework** to further elucidate the relationship between precipitation anomalies and public discourse on climate change. This complementary approach enables a counterfactual analysis, distinguishing between months categorized as anomalous and non-anomalous based on precipitation data. By employing OLS linear regression, we aim to quantify the direct impact of extreme weather events on the level of public engagement with climate change issues. This method allows for a more traditional statistical analysis, providing a clear, interpretable model that can highlight potential causal relationships. The distinction between anomalous and non-anomalous months serves as a critical factor in our analysis, enabling us to isolate the effect of extreme weather patterns from the baseline public discourse on climate change. This bifurcation enhances the robustness of our counterfactual analysis, offering nuanced insights into how significant deviations from normal weather conditions may catalyze public discussions and concerns regarding climate change.
 This methodology section outlines the foundation of the study, detailing the research objective, the significance of the inquiry, the operational measures for the analysis, and the rationale behind the chosen hypothesis and machine learning algorithm. This structured approach ensures a clear and systematic investigation into the relationship between extreme weather patterns and public discourse on climate change.
 
@@ -103,6 +102,73 @@ For the causal inference analysis using Ordinary Least Squares Linear Regression
 
 This approach to causal inference with OLS-LR, centered on a methodical data processing strategy and a nuanced analysis framework, provides a rigorous examination of how extreme weather events, as quantified by precipitation anomalies, influence public discussions on climate change. The use of a median-based classification for anomalies ensures a robust analytical foundation, capturing the nuanced impact of climatic extremities on societal discourse.
 
+## Research Findings
+![Findings flowchart created using markmap.js](https://github.com/Rising-Stars-by-Sunshine/Stats201_Yuanjun_Lin/assets/31695074/ce593065-8e7e-4f00-b175-f79bd5fe6017)
+To effectively communicate the results of your research in the README, it's essential to directly link the outcomes back to each posed research question, elucidating how the employed methodologies provided the answers. Here's a structured approach to presenting these findings:
+
+---
+
+## Results
+
+Our research embarked on a journey to unravel the dynamics between precipitation anomalies and public discourse on climate change, guided by two pivotal research questions. Here's how our findings provide answers to these questions:
+
+### Research Question 1: How do precipitation anomalies influence public discourse on climate change?
+
+**Method: Convolutional Neural Network (CNN)**
+- The CNN model, designed to analyze spatial patterns in precipitation data, revealed a general correlation between precipitation anomalies and heightened public interest in climate change. The model's predictive accuracy, especially in non-extreme weather conditions, underscores the sensitivity of public discourse to variations in precipitation patterns.
+
+**Results:**
+- The CNN's performance, reflected in its ability to approximate actual precipitation anomalies, indicates a tangible link between observed weather patterns and subsequent public discussions on climate change. However, the model's difficulty in accurately predicting extreme anomalies suggests the influence of additional, unaccounted factors in shaping public discourse during significant weather events.
+
+### Research Question 2: Can we identify periods of heightened climate change discourse based on precipitation anomalies?
+
+**Method: Causal Inference with OLS Linear Regression**
+- By aggregating spatial precipitation data into a monthly anomaly index and classifying months as anomalous or non-anomalous based on the median value, the OLS-LR analysis provided a nuanced view of the relationship between extreme weather events and climate change discussions.
+
+**Results:**
+- The regression analysis for anomalous months indicated a positive, albeit statistically insignificant, relationship between precipitation anomalies and climate change discussions. This suggests that while extreme weather events may prompt increased public discourse, the complexity of this relationship warrants further investigation.
+
+### Part VII: Future Research Directions
+
+#### Causal Inference Methods
+
+**Background/Motivation**: Building on the current study's exploration of precipitation anomalies and public discourse on climate change, further research could delve deeper into the causal mechanisms underlying this relationship. Understanding these causal links is crucial for devising targeted, effective climate communication strategies and policies.
+
+**Research Questions**: How do specific types of precipitation anomalies (e.g., extreme rainfall, droughts) causally impact the nature and intensity of climate change discourse? Which external factors (e.g., media coverage, political events) mediate or moderate this relationship?
+
+**Methods**: Future studies could employ advanced causal inference methods such as **Instrumental Variables (IV) analysis** or **Propensity Score Matching (PSM)** to address potential endogeneity issues and uncover the true causal effects. For IV analysis, identifying an appropriate instrument that affects precipitation anomalies but not directly the climate change discourse would be key. For PSM, matching observations with similar characteristics except for the anomaly occurrence could help isolate its causal impact.
+
+- **Potential Results**: This approach could reveal nuanced insights into how different types of weather anomalies influence public discussions on climate change, accounting for confounding factors and biases.
+  
+- **Contributions**: Such research would contribute significantly to the climate communication literature by providing empirically grounded insights into how to effectively engage the public on climate issues, especially during extreme weather events.
+
+**Causal Graph Illustration**:
+```
+[Extreme Weather Events (Treatment)] --> [Public Discourse on Climate Change (Target)]
+  ↑                                               ↑
+[Media Coverage, Political Events (Confounding Variables)]
+```
+
+#### Optimization Methods
+
+**Background/Motivation**: Optimizing the timing and content of climate communication efforts can maximize their impact. By understanding the dynamics of public engagement with climate discourse, particularly in response to weather anomalies, policymakers can more effectively allocate resources and strategize outreach efforts.
+
+**Research Questions**: What are the optimal strategies for initiating climate change communication in response to different precipitation anomalies to maximize public engagement and policy impact?
+
+**Methods**: Utilizing **Reinforcement Learning (RL)** algorithms could offer a novel approach to this challenge. By framing the problem within an RL framework, where the state represents the current climate and public discourse conditions, the action encompasses different communication strategies, and the reward is based on the level of public engagement or policy adoption, we can iteratively identify optimal communication strategies.
+
+- **Potential Results**: This method could identify the most effective timing and methods for climate change communication in relation to various weather patterns, enhancing public awareness and action.
+  
+- **Contributions**: Implementing RL in climate communication research could pioneer a data-driven approach to environmental policy and advocacy, tailoring efforts to real-time conditions and maximizing their societal impact.
+
+**Reinforcement Learning Framework Illustration**:
+```
+[State (Current Climate Conditions, Public Discourse Levels)]
+     ↓ (Action: Communication Strategy)
+[Public Engagement (Reward)]
+```
+
+These future research directions aim to harness the power of causal inference and optimization methods to advance our understanding of climate change communication's dynamics, ultimately contributing to more effective public engagement and policy development in response to climate anomalies.
 
 ### References
 Torricelli M, Falkenberg M, Galeazzi A, Zollo F, Quattrociocchi W, et al. (2023) How does extreme weather impact the climate change discourse? Insights from the Twitter discussion on hurricanes. PLOS Climate 2(11): e0000277. https://doi.org/10.1371/journal.pclm.0000277. Retrieved at https://journals.plos.org/climate/article/citation?id=10.1371/journal.pclm.0000277.
