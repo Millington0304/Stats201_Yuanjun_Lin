@@ -1,4 +1,5 @@
-![something]<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/7N2TvRYKFb8ExEySWYqk6m"></iframe>
+![Code flowchart](https://github.com/Rising-Stars-by-Sunshine/Stats201_Yuanjun_Lin/assets/31695074/4fb0cfcf-adf6-4b2e-a364-25ff9428e294)
+
 
 # Data acquisition and visualization
 
